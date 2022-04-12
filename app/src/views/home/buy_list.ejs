@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="ko">  
+  <head> 
+    <title>Simple memo</title> 
+    <link rel="stylesheet" href="/css/home/login.css">
+  </head> 
+  <body> 
+    <h1>나의 구매 상품 list</h1> 
+    
+    <table border='2'> 
+      <tr> 
+        <th>상품id</th> 
+        <th>판매자</th> 
+        <th>상품명</th> 
+        <th>가격</th> 
+        <th>정보</th> 
+        <th>최근수정날짜</th>
+        <th>상태</th>
+      </tr> 
+      <% rows.forEach((row, index)=>{ %> 
+        <tr> 
+          <td><%=row.productID%></td> 
+          <td><%=row.sellerID%></td> 
+          <td><%=row.productName%></td> 
+          <td><%=row.price%></td> 
+          <td><%=row.info%></td> 
+          <td><%=row.date%></td> 
+          <td><%=row.state%></td> 
+          <!-- <td><input type="button" onclick="javascript:location.href='/product_'" value="수정"></td>  -->
+        </tr>
+      <% }) %> 
+    </table> 
+    <h1 class="message"><a href="/logout">logout</a></h1>
+    <h1 class="message"><a href="/product_list_all">전체 상품 조회</a></h1>
+  </body> 
+</html>

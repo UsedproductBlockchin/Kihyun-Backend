@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/home/login.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>판매 상품 수정</h1> 
+        <div class="find-id-page">
+            <div class="form">
+              <form class="find-id-page-form">
+                <input type="hidden" id="productid" value=<%= pid %>>
+                <input id = "productName" type="text" placeholder="productName"/>
+                <input id = "price" type="text" placeholder="price"/>
+                <input id = "info" type="text" placeholder="info"/>
+                <p id = "button"> product_update</p id = "button">
+                <h1 class="message"><a href="/logout">logout</a></h1>
+                <h1 class="message"><a href="/">main</a></h1>
+
+              </form>
+            </div>
+          </div>
+    </body>
+    <script src = "/js/home/product_update.js" defer></script>
+    </html>
+    <!--Copyright (c) 2022 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy)-->

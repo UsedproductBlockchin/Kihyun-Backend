@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/home/login.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>상품 구매</h1> 
+        <div class="find-id-page">
+            <div class="form">
+              <form class="find-id-page-form">
+                <input type="hidden" id="productid" value=<%= pid %>>
+                <input id = "buyeradd" type="text" placeholder="배송주소"/>
+                <input id="button" onclick="javascript:location.href='/buy_list'" value="구매">
+                <!-- <p id = "button"><a href="/buy_list"> 구매 </a></p id = "button"> -->
+                <h1 class="message"><a href="/logout">logout</a></h1>
+              </form>
+            </div>
+          </div>
+    </body>
+    <script src = "/js/home/buy.js" defer></script>
+    </html>
+    <!--Copyright (c) 2022 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy)-->
